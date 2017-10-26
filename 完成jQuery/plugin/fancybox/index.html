@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<title>Menu Photo Gallery</title>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$(".menuImg").fancybox();
+});
+
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<h1>Menu Photo Gallery</h1>
+
+<div id="content">
+  <p><a href="img/menu01.jpg" class="menuImg" data-fancybox-group="gallery" title="シラスサラダ"><img src="img/menu01_s.jpg" width="200" height="150" alt="シラスサラダ" /></a></p>
+  <p><a href="img/menu02.jpg" class="menuImg" data-fancybox-group="gallery" title="フレッシュトマトのパスタ"><img src="img/menu02_s.jpg" width="200" height="150" alt="フレッシュトマトのパスタ" /></a></p>
+  <p><a href="img/menu03.jpg" class="menuImg" data-fancybox-group="gallery" title="カツレツ"><img src="img/menu03_s.jpg" width="200" height="150" alt="カツレツ" /></a></p>
+  <p><a href="img/menu04.jpg" class="menuImg" data-fancybox-group="gallery" title="ブレンドコーヒー"><img src="img/menu04_s.jpg" width="200" height="150" alt="ブレンドコーヒー" /></a></p>
+</div>
+
+</div>
+</body>
+</html>

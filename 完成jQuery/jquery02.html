@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<title>表示・非表示関連のメソッド</title>
+<link rel="stylesheet" type="text/css" href="css/jq02.css" media="all" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	
+	$("#nav").hide();
+	
+	//$("#nav").css("display","block");
+	//$("#nav").show();
+	
+	$("#ttl").click(function(){
+		//$("#nav").show();
+		//$("#nav").fadeIn(200);
+		
+		/*
+		if($("#nav").css("display")=="none"){
+			$("#nav").slideDown(200);
+		}else{
+			$("#nav").slideUp(200);
+		}
+		*/
+		
+		$("#nav").slideToggle();
+		
+	});
+	
+});
+
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<h1 id="ttl">デジハリ関連のスクール</h1>
+
+<ul id="nav">
+  <li><a href="http://school.dhw.co.jp/">デジタルハリウッド（専門スクール）</a></li>
+  <li><a href="http://www.dhw.ac.jp/">デジタルハリウッド大学</a></li>
+  <li><a href="http://gs.dhw.ac.jp/">デジタルハリウッド大学院</a></li>
+  <li><a href="http://online.dhw.co.jp/">デジハリ・オンラインスクール</a></li>
+</ul>
+
+<hr />
+
+<address>Copyright &copy; 2014 Digital Hollywood Co.,Ltd. All Rights Reserved.</address>
+
+</div>
+</body>
+</html>

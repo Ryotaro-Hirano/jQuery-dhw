@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<title>jQueryの学習</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<script type="text/javascript" src="jQuery/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+
+		// document.getElementById("ttl").style.color = "#090";
+		// document.getElementById("ttl").style.fontSize = "1.2em";
+
+		// $("#ttl").ccs("color","#090");
+		// $("#ttl").ccs("font-size","1.2em");
+
+		 $("#ttl").ccs("color","#090").ccs("font-size","1.2em");
+
+		// var preImg = new Image();
+		//
+		// preImg.src = "img/photo01_s_on.jpg";
+		//
+		// document.getElementById("cafeImg").onmouseover = function(){
+		// 	document.getElementById("cafeImg").setAttribute("src","img/photo01_s_on.jpg");
+		// }
+		//
+		// document.getElementById("cafeImg").onmouseout = function(){
+		// 	document.getElementById("cafeImg").setAttribute("src","img/photo01_s.jpg");
+		// }
+
+		$("img[src='img/photo01_s.jpg']").hover(function(){
+			$("img[src='img/photo01_s.jpg']").attr("src","img/photo01_s_on.jpg");
+		},function(){
+			$("img[src='img/photo01_s_on.jpg']").attr("src","img/photo01_s.jpg");
+		});
+
+	});
+
+
+
+</script>
+</head>
+
+<body>
+
+<h1 id="ttl">雑貨店の店内写真</h1>
+
+<p id="para"><a href="img/photo01.jpg"><img src="img/photo01_s.jpg" width="180" height="240" alt="雑貨店の店内" name="cafeImg" id="cafeImg" /></a></p>
+
+</body>
+</html>

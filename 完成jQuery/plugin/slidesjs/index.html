@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<title>Main Image Slider</title>
+<link rel="stylesheet" type="text/css" href="css/cssreset.css"/>
+<link rel="stylesheet" type="text/css" href="css/cssfonts.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<style type="text/css">
+
+#slides{
+	width:800px;
+	height:250px;
+	margin:0 auto;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="source/jquery.slides.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	
+	$("#slides").slidesjs({
+		play:{
+			auto:true,
+			//effect:"fade",
+			interval:5000
+		},
+		effect:{
+			slide:{
+				speed:1000
+			},
+			fade:{
+				speed:1000
+			}
+		}
+	});
+	
+});
+
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="containerTop">
+    <div id="headerTop">
+    	<h1>Main Image Slider</h1>
+    </div>
+    <div id="headerBottom">
+    	<p id="slides">
+      	<img src="img/main_img01.jpg" width="800" height="250" />
+        <img src="img/main_img02.jpg" width="800" height="250" />
+        <img src="img/main_img03.jpg" width="800" height="250" />
+        <img src="img/main_img04.jpg" width="800" height="250" />
+      </p>
+    </div>
+  </div>
+  <div id="content">
+  	<p>contents</p>
+  </div>
+  <div id="containerBottom">
+  	<address>footer</address>
+  </div>
+</div>
+</body>
+</html>
