@@ -9,6 +9,26 @@
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
 
+  $(function () {
+
+      $("#nav").hide();
+
+    // $("#nav").css("display","block");
+    // $("#nav").show();
+
+    $("#ttl").click(function () {
+      // $("#nav").show();
+      // $("#nav").fadeIn("200");
+
+      // if ($("#nav").css("display")=="none") {
+      //   $("#nav").slideDown(200);
+      // }else{
+      //   $("#nav").slideUp(200);
+      // }
+
+      $("#nav").slideToggle();
+    });
+  });
 </script>
 </head>
 

@@ -32,3 +32,9 @@ li {
 
 /* レイアウト */
 
+/*#nav {
+	display: none;
+}*/
+#ttl {
+	cursor: pointer;
+}

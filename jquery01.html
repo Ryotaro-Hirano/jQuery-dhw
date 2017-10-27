@@ -6,6 +6,45 @@
 <meta http-equiv="content-script-type" content="text/javascript" />
 <title>さまざまなセレクタやメソッド</title>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    $("#para a").click(function(){
+
+      // $("#ttl").css("color","#00f");
+      // 順番を指定しています。
+      // $("#nav li:eq(0)").css("color","#f60");
+
+
+      // 下記は奇数番目のスタイルを当てることができます。
+      // $("#nav li:odd").css("color","#f60");
+
+      // 下記は偶数番目のスタイルを当てることができます。
+      // $("#nav li:even").css("color","#f60");
+
+      // 指定した項目よりも小さいところにスタイルを当てる
+      // ltはless than の省略形
+      // $("#nav li:lt(2)").css("color","#f60");
+
+      // 指定した項目よりも大きい
+      // greater thanの省略形
+      // $("#nav li:gt(1)").css("color","#f60");
+
+      // テキストの変更
+      // $("#ttl").text("デジタルハリウッド関連のスクール");
+
+      // HTMLの追加
+      // $("#ttl").html("<h2>デジタルハリウッド関連のスクール</h2>");
+
+      // HTMLの置き換え
+      // $("#ttl").replaceWith("<h2>デジタルハリウッド関連のスクール</h2>");
+
+      var schoolName=$("#nav li:eq(0)").text();
+      $("#ttl").text(schoolName);
+
+    });
+  });
+</script>
 </head>
 
 <body>
