@@ -17,12 +17,16 @@ $(function(){
 		// $("#ttl").ccs("color","#090");
 		// $("#ttl").ccs("font-size","1.2em");
 
-		 $("#ttl").ccs("color","#090").ccs("font-size","1.2em");
+		 $("#ttl")
+		 .ccs("color","#090")
+		 .ccs("font-size","1.2em");
 
 		// var preImg = new Image();
 		//
 		// preImg.src = "img/photo01_s_on.jpg";
 		//
+
+		$("<img>").attr("src","img/photo01_s_on.jpg");
 		// document.getElementById("cafeImg").onmouseover = function(){
 		// 	document.getElementById("cafeImg").setAttribute("src","img/photo01_s_on.jpg");
 		// }
@@ -32,9 +36,9 @@ $(function(){
 		// }
 
 		$("img[src='img/photo01_s.jpg']").hover(function(){
-			$("img[src='img/photo01_s.jpg']").attr("src","img/photo01_s_on.jpg");
+			$(this).attr("src","img/photo01_s_on.jpg");
 		},function(){
-			$("img[src='img/photo01_s_on.jpg']").attr("src","img/photo01_s.jpg");
+			$(this).attr("src","img/photo01_s.jpg");
 		});
 
 	});
