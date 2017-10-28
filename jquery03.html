@@ -8,7 +8,21 @@
 <link rel="stylesheet" type="text/css" href="css/jq03.css" media="all" />
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
+  $(function () {
 
+    $("#headerText2").hide();
+
+    $("#headerText")
+    .css("left","-1000px")
+    .animate({"left":"10px"},1000)
+    .animate({"left":"0"},200)
+    .delay(5000)
+    .fadeOut(function () {
+      $("#headerText2")
+      .fadeIn()
+      .delay(500);
+    });
+  });
 </script>
 </head>
 
@@ -17,6 +31,7 @@
 <div id="header" class="clearfix">
   <h1 id="ttl">商品写真ギャラリー</h1>
   <p id="headerText">各写真のサムネイルは、クリックをすると大きな写真をご覧いただけます。</p>
+  <p id="headerText2">商品写真の更新は、毎月15日です！</p>
 </div>
 
 <div id="item_img">
