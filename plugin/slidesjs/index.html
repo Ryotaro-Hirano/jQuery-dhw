@@ -8,6 +8,42 @@
 <link rel="stylesheet" type="text/css" href="css/cssreset.css"/>
 <link rel="stylesheet" type="text/css" href="css/cssfonts.css"/>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<style type="text/css">
+  #slides{
+    width: 800px;
+    height: 250px;
+    margin: 0 auto;
+  }
+</style>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js">
+</script>
+<script type="text/javascript" src="source/jquery.slides.min.js">
+</script>
+
+<script type="text/javascript">
+
+  $(function () {
+    $("#sildes").slidesjs({
+      play:{
+        auto: ture,
+        effect: "fade",
+        interval: 5000
+      },
+      effect:{
+        slide:{
+          speed:1000
+        },
+        fade: {
+          speed: 1000
+        }
+      }
+    });
+  });
+
+</script>
+
 </head>
 
 <body>
@@ -17,7 +53,12 @@
     	<h1>Main Image Slider</h1>
     </div>
     <div id="headerBottom">
-    	<p><img src="img/main_img01.jpg" width="800" height="250" /></p>
+    	<p id="slides">
+        <img src="img/main_img01.jpg" width="800" height="250" />
+        <img src="img/main_img02.jpg" width="800" height="250" />
+        <img src="img/main_img03.jpg" width="800" height="250" />
+        <img src="img/main_img04.jpg" width="800" height="250" />
+      </p>
     </div>
   </div>
   <div id="content">
